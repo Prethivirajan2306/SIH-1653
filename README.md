@@ -3,57 +3,117 @@
 ## Register Number:212224040251
 ## Name:PRETHIVIRAJAN.L
 ## Problem Title
-SIH 1653:Farmers’ Market Connect – Connecting Farmers Directly to Buyers
+SIH 1653:Web based Selector-Applicant Simulation Software
 ## Problem Description
-Background:
-Farmers often face challenges in selling their products at fair prices due to middlemen, lack of direct market access, price fluctuations, and logistical issues. Many small-scale farmers do not have the resources or digital infrastructure to connect with potential buyers directly, leading to financial losses and food wastage. On the other hand, consumers and businesses struggle to source fresh, locally grown, and reasonably priced produce without intermediaries inflating costs.
+Background: Recruitment and Assessment Centre (RAC) under DRDO, Ministry of Defence carries out interviews for applications received against advertised vacancies and for promotion to next higher grade for scientific manpower inducted within DRDO. Description: The process of interviewing is a challenging task. An unbiased objective interviewing process helps identify the right talent. The basic process of an interview involves posing a set of questions by an interviewer and thereafter evaluating responses from candidates. Thus, the questions asked should be relevant and match the area/ expertise of the applicant and the responses should also be of relevance w.r.t. the question asked. Expected Solution: The proposed solution should provide experts as well as candidates a real life Board Room experience, starting with initial ice-breaking questions leading to in-depth techno-managerial (depending on the level of candidate) questions. It shall also be able to provide a quantifiable score for experts as well as the candidate for the relevancy of questions w.r.t. the area/ expertise of the applicant. Similarly, candidate responses should also be graded for relevancy w.r.t. the question asked, finally assisting in arriving at an overall score for the subject knowledge of the candidate and thus his/ her suitability against the advertised post.
 ## Problem Creater's Organization
-Ministry of Agriculture
+Ministry of Defence
 
 ## Idea
-Features & Functionality
+Question Relevance: The interviewer will ask questions that are relevant to the applicant's expertise area. The questions will be automatically tailored based on the applicant’s profile.
 
-1. Farmer Registration – Farmers can create profiles, list available crops, and set their own prices.
-2. Buyer Marketplace – Consumers, vendors, and businesses can browse available products and place orders.
-3. Live Price Dashboard – Farmers can see real-time market prices and adjust their pricing accordingly.
-4. Smart Logistics & Delivery Partnering – Option for farmers to partner with local transporters for delivery.
-5. Seasonal Crop Alerts – Buyers get notifications about seasonal fruits/vegetables directly from farmers.
-6. AI-Based Demand Prediction – The platform suggests what crops farmers should grow based on demand trends.
-7. Government Schemes & Subsidies Info – Farmers get updates on available government schemes and financial assistance.
-8. Multi-Language & Voice Assistant – Farmers can access the platform in their native languages and use voice-based commands to list products or check updates.
+Answer Evaluation: The system will also evaluate the candidate’s answers for relevance and quality, which helps in providing a fair, objective score based on their responses.
+
+Real-Life Experience: The platform will replicate a real-world Board Room experience with an interactive interface for the interview process. It will simulate in-depth techno-managerial questions based on the applicant’s level and expertise.
+
+Response Evaluation : Utilize AI/ML and NLP to analyze and score candidate responses for relevance and correctness.
+
+Objective Scoring : Provide a quantifiable evaluation mechanism based on predefined criteria to assess both the expert’s questioning and the candidate’s answers.
+
+Real-time Interaction : Enable a seamless virtual interview experience with real-time communication and structured question-answering flow.
+
+Data Analytics & Insights : Store and analyze interview data for future reference, training, and performance improvement.
+
+Automated Interview Moderation – The system will guide the interview process by ensuring that the expert’s questions remain relevant to the candidate’s domain and level. It will prevent off-topic or biased questioning, maintaining fairness and consistency across all interviews.
+
+Adaptive Learning & Continuous Improvement – Using AI, the platform will refine its question bank and evaluation criteria over time based on past interviews, expert feedback, and candidate performance. This ensures a continuously improving system that adapts to evolving job requirements and assessment standards.
    
 
 
 
 ## Proposed Solution / Architecture Diagram
-The solution is a web and mobile-based marketplace that enables direct transactions between farmers and buyers (individual consumers, retailers, restaurants, and wholesalers). It includes real-time price discovery, AI-driven demand forecasting, secure payment systems, and logistics integration to ensure smooth operations.
 
-![web image](https://github.com/user-attachments/assets/1ba67a74-c2c9-49d1-89d3-6e33210ed8c5)
 
+Expert Panel Interface: Enables interviewers to ask questions, evaluate responses, and receive AI-assisted question recommendations.
+
+AI-Powered Question Generation
+Automatically suggests interview questions based on the candidate’s expertise, job role, and level.
+
+Answer Evaluation Engine
+Uses Natural Language Processing (NLP) to assess the relevance and quality of candidate responses.
+Evaluates both the expert’s questioning quality and the candidate’s responses.
+Provides an objective score to determine the candidate’s suitability for the role.
+Real-Time Interaction & Monitoring
+Enables live, structured interviews with interactive feedback mechanisms.
+Ensures smooth communication between experts and candidates.
+Data Analytics & Insights
+
+
+![defence interview](https://github.com/user-attachments/assets/df1a81da-8564-4aa4-96f0-ebc09c94899c)
 
 ## Use Cases
-![use cases](https://github.com/user-attachments/assets/8e1ce308-e0b0-4062-b32b-dbf5221b0cc7)
+
+![use cases for defence](https://github.com/user-attachments/assets/467d7023-4910-4a1f-ace3-e8d9c728cc1d)
 
 
 
 ## Technology Stack
-Frontend    :       	React.js (Web), Flutter (Mobile);
-Backend      :    	Node.js (Express), Python (Django);
-Database       :   	PostgreSQL (SQL), MongoDB (NoSQL);
-AI & Analytics	 :    TensorFlow, Scikit-learn, OpenAI;
-Cloud & Hosting    :	AWS (S3, EC2, Lambda), Firebase;
-Payment Integration	: Razorpay, Stripe, UPI, Paytm;
-Messaging & Alerts	: Twilio (SMS), Firebase Push Notifications;
-Logistics & Mapping	 :Google Maps API, OpenStreetMap.
+Frontend:
+React.js (or Angular)
+Axios (for making HTTP requests)
+
+Backend:
+Express.js / Node.js
+Python libraries: spaCy, TensorFlow/PyTorch
+
+Database:
+MySQL/PostgreSQL for structured data
+MongoDB for unstructured data
+
+Authentication:
+OAuth2.0 for secure user authentication.
+
+APIs:
+NLP API (for language processing).
+Machine Learning APIs (for evaluating answers).
+
+Deployment & Hosting:
+Docker for containerization
+AWS/Azure/Google Cloud for hosting
 
 
 ## Dependencies
-Mapping Service Integration (Google Maps API, OpenStreetMap) :  	(10 days) -	₹10,000;
-Data Collection & Farmer Registration                         :	(10 days) -	₹8,000;
-Web & Mobile App Development	                                 : (30 days)	-  ₹15,000;
-Backend API & Database Setup	                                  :(20 days)	-  ₹7,000;
-AI-Based Demand Forecasting	                                   : (15 days)	-  ₹5,000;
-Payment Gateway Integration (Razorpay, UPI, Stripe)            :	(7 days)	-  ₹3,000;
-Logistics & Delivery Partner Integration	                     : (10 days)	-  ₹5,000;
-Testing & Debugging	                                           : (10 days)	-  ₹4,000;
-Marketing & Outreach                                          :	(Ongoing)	-  ₹5,000;
+Frontend Development 
+(React.js / Angular)	
+20 days	₹12,000; 
+
+Backend API & Database Setup
+(Node.js/Python, SQL/NoSQL)	
+20 days	₹10,000;
+
+AI & NLP
+Model Integration (Question Evaluation, Answer Scoring)	
+15 days	₹8,000;
+
+Authentication & Security 
+(OAuth2.0, JWT, RBAC)	
+10 days	₹5,000;
+
+Cloud Deployment & Hosting 
+(AWS/Azure/GCP)	
+10 days	₹6,000;
+
+WebSockets & Real-time Communication	
+7 days	₹4,000;
+
+Interview Simulation & Scoring Mechanism	
+15 days	₹7,000;
+
+Data Analytics & Reporting Module
+12 days	₹6,000;
+
+Testing & Debugging	
+10 days	₹5,000;
+
+Marketing & Outreach
+Ongoing	₹5,000/month
